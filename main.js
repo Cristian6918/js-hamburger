@@ -2,19 +2,21 @@
 console.log('js ok');
 
 
-// hamburger menu opening
 
-document.querySelector('.header-right > a').addEventListener('click', function () {
+// hamburger menu opening
+const hamburgerButton = document.querySelector('.header-right > a');
+
+hamburgerButton.addEventListener('click', function () {
+
     document.querySelector('.hamburger-menu').style.display = 'block';
 
 });
 
-
 // close Button
-document.querySelector('.close').addEventListener('click', function () {
+const closeButton = document.querySelector('.close');
 
+closeButton.addEventListener('click', function () {
     document.querySelector('.hamburger-menu').style.display = 'none';
-
 });
 
 
