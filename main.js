@@ -2,13 +2,14 @@
 console.log('js ok');
 
 
+const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 // hamburger menu opening
 const hamburgerButton = document.querySelector('.header-right > a');
 
 hamburgerButton.addEventListener('click', function () {
 
-    document.querySelector('.hamburger-menu').style.display = 'block';
+    hamburgerMenu.style.display = 'block';
 
 });
 
@@ -16,7 +17,7 @@ hamburgerButton.addEventListener('click', function () {
 const closeButton = document.querySelector('.close');
 
 closeButton.addEventListener('click', function () {
-    document.querySelector('.hamburger-menu').style.display = 'none';
+    hamburgerMenu.style.display = 'none';
 });
 
 
